@@ -205,6 +205,8 @@ public class SpringGraalNativeTask extends Exec {
 
         //DownloadUtils.download(this.getDownloadUrl(), Paths.get(this.getProject().getBuildDir().getAbsolutePath(), "tmp", SpringGraalNativePlugin.TASK_NAME).toFile(), this.download.getOrElse(Constants.DOWNLOAD_DEFAULT));
 
+        SpringGraalNativeTask.LOGGER.info("取消下载graalvm");
+
         final File outputDir = new File(this.getProject().getBuildDir().getAbsolutePath(), SpringGraalNativeTask.DIR_OUTPUT);
 
         try {
