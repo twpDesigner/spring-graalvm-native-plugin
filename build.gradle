@@ -117,8 +117,8 @@ sonarqube {
 //region Gradle plugin publication configuration
 
 pluginBundle {
-    website = 'https://github.com/ayltai/spring-graalvm-native-plugin'
-    vcsUrl  = 'https://github.com/ayltai/spring-graalvm-native-plugin.git'
+    website = 'https://github.com/twpDesigner/spring-graalvm-native-plugin.git'
+    vcsUrl  = 'https://github.com/twpDesigner/spring-graalvm-native-plugin.git'
     tags    = [ 'graal', 'graalvm', 'native', 'image', 'spring', 'boot', 'java', ]
 }
 

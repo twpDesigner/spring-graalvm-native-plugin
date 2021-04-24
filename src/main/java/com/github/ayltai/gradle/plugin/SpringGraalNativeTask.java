@@ -203,7 +203,7 @@ public class SpringGraalNativeTask extends Exec {
     protected void exec() {
         if (!this.mainClassName.isPresent()) throw new InvalidUserDataException("mainClassName is null");
 
-        DownloadUtils.download(this.getDownloadUrl(), Paths.get(this.getProject().getBuildDir().getAbsolutePath(), "tmp", SpringGraalNativePlugin.TASK_NAME).toFile(), this.download.getOrElse(Constants.DOWNLOAD_DEFAULT));
+        //DownloadUtils.download(this.getDownloadUrl(), Paths.get(this.getProject().getBuildDir().getAbsolutePath(), "tmp", SpringGraalNativePlugin.TASK_NAME).toFile(), this.download.getOrElse(Constants.DOWNLOAD_DEFAULT));
 
         final File outputDir = new File(this.getProject().getBuildDir().getAbsolutePath(), SpringGraalNativeTask.DIR_OUTPUT);
 
